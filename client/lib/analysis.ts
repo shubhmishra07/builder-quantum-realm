@@ -48,7 +48,7 @@ export async function mockAnalyzeImage(
     ]);
     return {
       category: "soil",
-      summary: `Soil appears ${soil}. Suitable for ${crops}. Use ${fert}.",
+      summary: `Soil appears ${soil}. Suitable for ${crops}. Use ${fert}.`,
       cards: [
         { title: "Soil Type", value: soil },
         { title: "Suitable Crops", value: crops },
@@ -63,7 +63,7 @@ export async function mockAnalyzeImage(
     const grade = pick(["A+", "A", "B"]);
     return {
       category: "seed",
-      summary: `${seedType} seeds detected. Quality grade ${grade}.",
+      summary: `${seedType} seeds detected. Quality grade ${grade}.`,
       cards: [
         { title: "Seed Type", value: seedType },
         { title: "Quality", value: grade, severity: grade === "B" ? "warning" : "success" },
